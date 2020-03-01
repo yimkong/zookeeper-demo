@@ -33,7 +33,7 @@ public class Main {
         ServiceInstance<SimpleInfo> instance = sib.payload(model).build();
         ServiceDiscovery<SimpleInfo> serviceDiscovery = ServiceDiscoveryBuilder.builder(SimpleInfo.class)
                 .client(client).basePath(BASE_PATH).build();
-        // 服务注册,相当于添加一个临时节点
+        // 服务注册,相当于添加一个临时节点，路径为： root/name/id
         serviceDiscovery.registerService(instance);
         serviceDiscovery.start();
         Thread.sleep(1000 * 60 * 30);
