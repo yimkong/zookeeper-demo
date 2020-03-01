@@ -1,8 +1,5 @@
 package domain;
 
-import org.apache.curator.x.discovery.ServiceInstance;
-import org.apache.curator.x.discovery.ServiceInstanceBuilder;
-
 /**
  * author yg
  * description
